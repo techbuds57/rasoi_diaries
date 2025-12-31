@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rasoi Diaries - Authentic Indian Food Recipes. Discover traditional Indian cuisine, cooking methods, and authentic flavors from North to South India.">
+    <meta name="keywords" content="Indian food, Indian recipes, authentic Indian cuisine, North Indian food, South Indian food, vegetarian recipes, Indian cooking, Rasoi Diaries">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rasoi Diaries - Authentic Indian Food Recipes</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/rasoi-custom.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="nav-menu">
+                <nav class="main-menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about-me.html">About</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="recipe.html">Recipes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-right search-switch">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Page Top Recipe Section Begin -->
+    <section class="page-top-recipe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="pt-recipe-item large-item">
+                        <a href="recipe-detail.html#recipe/paneer-butter-masala">
+                            <div class="pt-recipe-img set-bg" data-setbg="img/recipe/recipe-3.jpg">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        </a>
+                        <div class="pt-recipe-text">
+                            <span>January 18, 2024</span>
+                            <h3><a href="recipe-detail.html#recipe/paneer-butter-masala">Paneer Butter Masala</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 order-lg-1">
+                    <div class="pt-recipe-item">
+                        <a href="recipe-detail.html#recipe/butter-chicken">
+                            <div class="pt-recipe-img set-bg" data-setbg="img/recipe/recipe-1.jpg">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        </a>
+                        <div class="pt-recipe-text">
+                            <h4><a href="recipe-detail.html#recipe/butter-chicken">Butter Chicken</a></h4>
+                        </div>
+                    </div>
+                    <div class="pt-recipe-item">
+                        <a href="recipe-detail.html#recipe/masala-dosa">
+                            <div class="pt-recipe-img set-bg" data-setbg="img/recipe/recipe-2.jpg">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        </a>
+                        <div class="pt-recipe-text">
+                            <h4><a href="recipe-detail.html#recipe/masala-dosa">Masala Dosa</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 order-lg-3">
+                    <div class="pt-recipe-item">
+                        <a href="recipe-detail.html#recipe/vegetable-biryani">
+                            <div class="pt-recipe-img set-bg" data-setbg="img/recipe/recipe-4.jpg">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        </a>
+                        <div class="pt-recipe-text">
+                            <h4><a href="recipe-detail.html#recipe/vegetable-biryani">Vegetable Biryani</a></h4>
+                        </div>
+                    </div>
+                    <div class="pt-recipe-item">
+                        <a href="recipe-detail.html#recipe/rajma-chawal">
+                            <div class="pt-recipe-img set-bg" data-setbg="img/recipe/recipe-5.jpg">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        </a>
+                        <div class="pt-recipe-text">
+                            <h4><a href="recipe-detail.html#recipe/rajma-chawal">Rajma Chawal</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Page Top Recipe Section End -->
+
+    <!-- Top Recipe Section Begin -->
+    <section class="top-recipe spad">
+        <div class="section-title">
+            <h5>Top Indian Recipes this Week</h5>
+        </div>
+        <div class="container po-relative">
+            <div class="plus-icon">
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="row" id="featured-recipes-container">
+                <!-- Dynamic content will be rendered here by JavaScript -->
+            </div>
+        </div>
+    </section>
+    <!-- Top Recipe Section End -->
+
+    <!-- Categories Filter Section Begin -->
+    <div class="categories-filter-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="filter-item">
+                        <ul>
+                            <li class="active" data-filter="*">All Categories</li>
+                            <li data-filter=".northindian">North Indian</li>
+                            <li data-filter=".southindian">South Indian</li>
+                            <li data-filter=".streetfood">Street Food</li>
+                            <li data-filter=".vegetarian">Vegetarian</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cf-filter" id="category-filter">
+                <!-- Dynamic content will be rendered here by JavaScript -->
+            </div>
+        </div>
+    </div>
+    <!-- Categories Filter Section End -->
+
+    <!-- Feature Recipe Section Begin -->
+    <section class="feature-recipe">
+        <div class="section-title">
+            <h5>Featured Indian Recipes</h5>
+        </div>
+        <div class="container po-relative">
+            <div class="plus-icon">
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="fr-item">
+                        <a href="recipe-detail.html#recipe/samosa">
+                            <div class="fr-item-img">
+                                <img src="img/recipe/recipe-6.jpg" alt="Samosa">
+                            </div>
+                        </a>
+                        <div class="fr-item-text">
+                            <h4><a href="recipe-detail.html#recipe/samosa">Samosa</a></h4>
+                            <p>Deep-fried triangular pastry filled with spiced potatoes and peas. One of India's most famous snacks, perfect for tea time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="fr-item">
+                        <a href="recipe-detail.html#recipe/pav-bhaji">
+                            <div class="fr-item-img">
+                                <img src="img/recipe/recipe-8.jpg" alt="Pav Bhaji">
+                            </div>
+                        </a>
+                        <div class="fr-item-text">
+                            <h4><a href="recipe-detail.html#recipe/pav-bhaji">Pav Bhaji</a></h4>
+                            <p>A spicy mashed vegetable curry served with buttered bread rolls. A famous Mumbai street food that's loved across India.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Recipe Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="fs-left">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="img/footer-logo.png" alt="">
+                            </a>
+                        </div>
+                        <p>Welcome to Rasoi Diaries - your destination for authentic Indian food recipes. Discover traditional cooking methods, explore regional cuisines from North to South India, and master the art of Indian cooking with step-by-step recipes and expert tips.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <form action="#" class="subscribe-form">
+                        <h3>Subscribe to our newsletter</h3>
+                        <input type="email" placeholder="Your e-mail">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+                        <a href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
+                        <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+                        <a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+                        <a href="#"><i class="fa fa-youtube"></i><span>Youtube</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search model -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">+</div>
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/recipes-data.js"></script>
+    <script src="js/recipes-renderer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

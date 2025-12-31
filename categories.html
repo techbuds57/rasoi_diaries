@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore Indian cuisine categories - North Indian, South Indian, Street Food, Vegetarian, and Sweets at Rasoi Diaries.">
+    <meta name="keywords" content="Indian cuisine categories, North Indian food, South Indian food, Indian street food, vegetarian Indian food, Indian desserts">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Indian Food Categories - Rasoi Diaries</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/rasoi-custom.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section-other">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="./index.html"><img src="img/little-logo.png" alt=""></a>
+            </div>
+            <div class="nav-menu">
+                <nav class="main-menu mobile-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-me.html">About</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="recipe.html">Recipes</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-right search-switch">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Search Section Begin -->
+    <div class="hero-search set-bg" data-setbg="img/search-bg.jpg">
+        <div class="container">
+            <div class="filter-table">
+                <form action="#" class="filter-search">
+                    <input type="text" placeholder="Search Indian recipes">
+                    <select id="category">
+                        <option value="">Category</option>
+                    </select>
+                    <select id="tag">
+                        <option value="">Tags</option>
+                    </select>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Search Section End -->
+
+    <!-- Recipe Section Begin -->
+    <section class="recipe-section spad">
+        <div class="container">
+            <div class="row" id="recipe-list-container">
+                <!-- Dynamic content will be rendered here by JavaScript -->
+            </div>
+        </div>
+    </section>
+    <!-- Recipe Section End -->
+
+    <!-- Categories Feature Recipe Section Begin -->
+    <section class="categories-feature-recipe spad">
+        <div class="section-title">
+            <h5>Featured Indian Recipes by Category</h5>
+        </div>
+        <div class="container po-relative">
+            <div class="plus-icon">
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="cfr-item">
+                        <a href="recipe-detail.html#recipe/butter-chicken">
+                            <div class="cfr-item-img set-bg" data-setbg="img/cat-feature/big-1.jpg">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        </a>
+                        <div class="cfr-item-text">
+                            <div class="cat-name">North Indian Cuisine</div>
+                            <a href="recipe-detail.html#recipe/butter-chicken">
+                                <h4>Butter Chicken</h4>
+                            </a>
+                            <p>A rich North Indian curry made with tender chicken cooked in a buttery tomato-based gravy. Mildly spiced and very popular globally.</p>
+                        </div>
+                    </div>
+                    <div class="cfr-item">
+                        <a href="recipe-detail.html#recipe/masala-dosa">
+                            <div class="cfr-item-img set-bg" data-setbg="img/cat-feature/big-2.jpg">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        </a>
+                        <div class="cfr-item-text">
+                            <div class="cat-name">South Indian Cuisine</div>
+                            <a href="recipe-detail.html#recipe/masala-dosa">
+                                <h4>Masala Dosa</h4>
+                            </a>
+                            <p>A crispy South Indian rice crepe filled with spiced potato masala, served with coconut chutney and sambar.</p>
+                        </div>
+                    </div>
+                    <div class="cfr-item">
+                        <a href="recipe-detail.html#recipe/samosa">
+                            <div class="cfr-item-img set-bg" data-setbg="img/cat-feature/big-3.jpg">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        </a>
+                        <div class="cfr-item-text">
+                            <div class="cat-name">Indian Street Food</div>
+                            <a href="recipe-detail.html#recipe/samosa">
+                                <h4>Samosa</h4>
+                            </a>
+                            <p>Deep-fried triangular pastry filled with spiced potatoes and peas. One of India's most famous snacks.</p>
+                        </div>
+                    </div>
+                    <div class="cfr-item">
+                        <a href="recipe-detail.html#recipe/paneer-butter-masala">
+                            <div class="cfr-item-img set-bg" data-setbg="img/cat-feature/big-4.jpg">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        </a>
+                        <div class="cfr-item-text">
+                            <div class="cat-name">Vegetarian Indian Food</div>
+                            <a href="recipe-detail.html#recipe/paneer-butter-masala">
+                                <h4>Paneer Butter Masala</h4>
+                            </a>
+                            <p>Soft paneer cubes simmered in a creamy tomato gravy. A staple vegetarian dish in Indian restaurants.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1">
+                    <div class="cfr-small-item">
+                        <a href="recipe-detail.html#recipe/rajma-chawal"><img src="img/cat-feature/small-1.jpg" alt="Rajma Chawal"></a>
+                        <div class="cfr-small-text">
+                            <div class="cat-name">North Indian</div>
+                            <h6>Rajma Chawal</h6>
+                        </div>
+                    </div>
+                    <div class="cfr-small-item">
+                        <a href="recipe-detail.html#recipe/idli-sambar"><img src="img/cat-feature/small-2.jpg" alt="Idli Sambar"></a>
+                        <div class="cfr-small-text">
+                            <div class="cat-name">South Indian</div>
+                            <h6>Idli Sambar</h6>
+                        </div>
+                    </div>
+                    <div class="cfr-small-item">
+                        <a href="recipe-detail.html#recipe/pav-bhaji"><img src="img/cat-feature/small-3.jpg" alt="Pav Bhaji"></a>
+                        <div class="cfr-small-text">
+                            <div class="cat-name">Street Food</div>
+                            <h6>Pav Bhaji</h6>
+                        </div>
+                    </div>
+                    <div class="cfr-small-item">
+                        <a href="recipe-detail.html#recipe/vegetable-biryani"><img src="img/cat-feature/small-4.jpg" alt="Vegetable Biryani"></a>
+                        <div class="cfr-small-text">
+                            <div class="cat-name">Vegetarian</div>
+                            <h6>Vegetable Biryani</h6>
+                        </div>
+                    </div>
+                    <div class="cfr-small-item">
+                        <a href="recipe-detail.html#recipe/chole-bhature"><img src="img/cat-feature/small-5.jpg" alt="Chole Bhature"></a>
+                        <div class="cfr-small-text">
+                            <div class="cat-name">North Indian</div>
+                            <h6>Chole Bhature</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Feature Recipe Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="fs-left">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="img/footer-logo.png" alt="">
+                            </a>
+                        </div>
+                        <p>Welcome to Rasoi Diaries - your destination for authentic Indian food recipes. Discover traditional cooking methods, explore regional cuisines from North to South India, and master the art of Indian cooking with step-by-step recipes and expert tips.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <form action="#" class="subscribe-form">
+                        <h3>Subscribe to our newsletter</h3>
+                        <input type="email" placeholder="Your e-mail">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+                        <a href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
+                        <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+                        <a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+                        <a href="#"><i class="fa fa-youtube"></i><span>Youtube</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search model -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">+</div>
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/recipes-data.js"></script>
+    <script src="js/recipes-renderer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

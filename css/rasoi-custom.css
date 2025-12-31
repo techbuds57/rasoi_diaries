@@ -1,0 +1,281 @@
+/* Rasoi Diaries - Custom Styles for Image Dimensions and Layout */
+
+/* Category Filter Images - Uniform Dimensions */
+.cf-filter .cf-item .cf-item-pic {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cf-filter .cf-item .cf-item-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Recipe Item Images - Uniform Dimensions */
+.recipe-item {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.recipe-item a {
+    display: block;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 0;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.recipe-item a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Compact Recipe Item Text - Reduce gaps */
+.recipe-item .ri-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.recipe-item .ri-text .cat-name {
+    margin-bottom: 10px;
+}
+
+.recipe-item .ri-text a {
+    margin-top: 0;
+    margin-bottom: 10px;
+    height: auto;
+}
+
+.recipe-item .ri-text a h4 {
+    margin: 0;
+    line-height: 1.3;
+}
+
+.recipe-item .ri-text p {
+    margin: 0;
+    line-height: 1.5;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Categories Feature Recipe Images - Compact Design */
+.cfr-item {
+    height: 145px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    overflow: visible;
+}
+
+.cfr-item .cfr-item-img {
+    width: 192px;
+    height: 145px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.cfr-item .cfr-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cfr-item .cfr-item-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    overflow: hidden;
+}
+
+.cfr-item .cfr-item-text .cat-name {
+    margin-bottom: 8px;
+}
+
+.cfr-item .cfr-item-text a {
+    margin: 0;
+}
+
+.cfr-item .cfr-item-text a h4 {
+    margin: 0 0 8px 0;
+    line-height: 1.3;
+}
+
+.cfr-item .cfr-item-text p {
+    margin: 0;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.cfr-small-item {
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+.cfr-small-item a {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: block;
+    float: left;
+    margin-right: 22px;
+}
+
+.cfr-small-item a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Navbar Logo - Fit to Navbar Height */
+.header-section .logo img,
+.header-section-other .logo img {
+    max-height: 60px;
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.header-section-other {
+    padding: 15px 0;
+}
+
+.header-section-other .logo {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+.header-section-other .logo a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-section .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+/* Similar Recipe Items */
+.similar-item {
+    margin-bottom: 30px;
+}
+
+.similar-item a {
+    display: block;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.similar-item a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Sidebar Items in About Me */
+.sidebar-item {
+    margin-bottom: 20px;
+    overflow: hidden;
+    clear: both;
+}
+
+.sidebar-item a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+}
+
+.sidebar-item a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar-item-text {
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .cf-filter .cf-item .cf-item-pic {
+        height: 200px;
+    }
+    
+    .recipe-item {
+        height: 450px;
+    }
+    
+    .recipe-item a {
+        height: 200px;
+    }
+    
+    .cfr-item {
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .cfr-item .cfr-item-img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .cfr-item .cfr-item-text {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .cf-filter .cf-item .cf-item-pic {
+        height: 180px;
+    }
+    
+    .recipe-item {
+        height: 420px;
+    }
+    
+    .recipe-item a {
+        height: 180px;
+    }
+    
+    .header-section .logo img,
+    .header-section-other .logo img {
+        max-height: 50px;
+    }
+    
+    .cfr-item .cfr-item-img {
+        height: 180px;
+    }
+}
+
